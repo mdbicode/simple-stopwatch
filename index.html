@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="flagNotification" class="flag-notification">
+        <div class="flag-notification-content">
+            <span id="closeNotification" class="close-btn">&times;</span>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+        </div>
+        <div class="time">
+            <div id="hour">0</div>
+            <span>:</span>
+            <div id="minutes">0</div>
+            <span>:</span>
+            <div id="seconds">0</div>
+            <span>:</span>
+            <div id="miliseconds">0</div>
+            <p>Hour</p>
+            <p></p>
+            <p>Minutes</p>
+            <p></p>
+            <p>Seconds</p>
+            <p></p>
+            <p>Miliseconds</p>
+            
+        </div>
+        <div class="action">
+            <button id="stop"><i class="fa fa-stop"></i></button>
+            <button id="pause"><i class="fa fa-pause"></i></button>
+            <button id="play"><i class="fa fa-play"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

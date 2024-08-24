@@ -1,0 +1,133 @@
+body{
+    background-image: url(background.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container{
+    /* width: 30%; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .time{
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    column-gap: 0.3rem ;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.container .time div{
+    box-sizing: content-box;
+    background-color: rgba(157, 157, 157, 0.271);
+    padding: 2.4rem;
+    height: 40px;
+    width: 40px;
+    font-size: 36px;
+    box-shadow: 0px 0px 12px 0.2px rgba(77, 77, 77, 0.492);
+    overflow: hidden;
+}
+
+.container .time span{
+    font-size: 40px;
+}
+
+.container .action{
+    width: 40%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 0.4rem;
+}
+.container .action button{
+    padding: 1rem;
+    border: none;
+    font-size: 28px;
+    background-color: #45454598;
+    box-shadow: 0px 0px 12px 0.2px rgba(77, 77, 77, 0.492);
+    color: #fff;
+}
+
+.container .action button:hover{
+    cursor: pointer;
+    background-color: #454545ee;
+}
+
+
+.active{
+    background-color: #454545ee !important;
+}
+
+/* Button styling */
+#flagButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#flagButton:hover {
+    background-color: #0056b3;
+}
+
+/* The Popup (background overlay) */
+.flag-notification {
+    display: none; /* Hide by default */
+    position: fixed;
+    z-index: 1000; /* On top of other elements */
+    right: 20px;
+    top: 20px;
+    width: 300px;
+    background-color: #ffffffcd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Popup content */
+.flag-notification-content {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    color: #333;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #555;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
